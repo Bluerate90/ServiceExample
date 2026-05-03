@@ -1,6 +1,11 @@
 apiVersion: v2
 name: serviceexample
-description: .NET app with MongoDB, Redis and NATS
+description: .NET Web API with MongoDB, Redis and NATS
 type: application
 version: 0.1.0
 appVersion: "1.0.0"
+annotations:
+  artifacthub.io/license: MIT
+  artifacthub.io/maintainers: |
+    - name: Bluerate90
+      email: your@email.com

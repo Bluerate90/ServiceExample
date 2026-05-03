@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  serviceexample:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-05-03T05:07:09.278061581-07:00"
+    description: .NET app with MongoDB, Redis and NATS
+    digest: 21e98dfa2d460c46c8050a4de578bec91828cf33fe9eae667f7fb8afa1bdfb2a
+    name: serviceexample
+    type: application
+    urls:
+    - https://bluerate90.github.io/ServiceExample/charts-repo/serviceexample-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-05-03T05:07:09.277772185-07:00"
