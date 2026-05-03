@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-app
+spec:
+  replicas: {{ .Values.app.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-app
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-app
+    spec:
+      containers:
+        - name: app
+          image: "{{ .Values.app.image.repository }}:{{ .Values.app.image.tag }}"
+          imagePullPolicy: {{ .Values.app.image.pullPolicy }}
+          ports:
+            - containerPort: {{ .Values.app.port }}
+          env:
+            - name: Aspire__MongoDB__Driver__ConnectionString
+              value: "mongodb://{{ .Release.Name }}-mongodb:{{ .Values.mongodb.port }}"
+            - name: Aspire__StackExchange__Redis__ConnectionString
+              value: "{{ .Release.Name }}-redis:{{ .Values.redis.port }}"
+            - name: Aspire__NATS__Net__ConnectionString
+              value: "nats://{{ .Release.Name }}-nats:{{ .Values.nats.port }}"

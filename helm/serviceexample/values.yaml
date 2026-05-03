@@ -1,0 +1,19 @@
+app:
+  image:
+    repository: bluerate90/serviceexample
+    tag: latest
+    pullPolicy: Always
+  port: 9080
+  replicaCount: 1
+
+mongodb:
+  image: mongo:latest
+  port: 27017
+
+redis:
+  image: redis:latest
+  port: 6379
+
+nats:
+  image: nats:latest
+  port: 4222

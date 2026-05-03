@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-nats
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-nats
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-nats
+    spec:
+      containers:
+        - name: nats
+          image: {{ .Values.nats.image }}
+          ports:
+            - containerPort: {{ .Values.nats.port }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-nats
+spec:
+  selector:
+    app: {{ .Release.Name }}-nats
+  ports:
+    - port: {{ .Values.nats.port }}
+      targetPort: {{ .Values.nats.port }}
