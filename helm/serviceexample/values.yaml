@@ -1,8 +1,9 @@
 app:
   image:
-    repository: bluerate90/serviceexample
+    repository: tibyandocker/serviceexample
     tag: latest
     pullPolicy: Always
+    pullSecret: dockerhub-secret
   port: 9080
   replicaCount: 1
 

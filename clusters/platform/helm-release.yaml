@@ -5,6 +5,7 @@ metadata:
   namespace: default
 spec:
   interval: 5m
+  timeout: 10m
   chart:
     spec:
       chart: serviceexample
@@ -16,5 +17,6 @@ spec:
   values:
     app:
       image:
-        repository: bluerate90/serviceexample
+        repository: tibyandocker/serviceexample
         tag: latest
+        pullSecret: dockerhub-secret
