@@ -8,7 +8,22 @@ entries:
           email: your@email.com
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-05-04T02:23:00.687003748-07:00"
+    created: "2026-05-04T02:34:59.217059395-07:00"
+    description: .NET Web API with MongoDB, Redis and NATS
+    digest: 5257402390bae628d36db3a9520ea275dff604856f5f51e89914fdf4c9bb2aad
+    name: serviceexample
+    type: application
+    urls:
+    - https://bluerate90.github.io/ServiceExample/charts-repo/serviceexample-0.3.0.tgz
+    version: 0.3.0
+  - annotations:
+      artifacthub.io/license: MIT
+      artifacthub.io/maintainers: |
+        - name: Bluerate90
+          email: your@email.com
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-05-04T02:34:59.214479816-07:00"
     description: .NET Web API with MongoDB, Redis and NATS
     digest: ec4b3562b38b4e7be622d093b6cb9c839b77604768f2f7d40b8b01f19979a8bb
     name: serviceexample
@@ -23,7 +38,7 @@ entries:
           email: your@email.com
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-05-04T02:23:00.686731737-07:00"
+    created: "2026-05-04T02:34:59.213229271-07:00"
     description: .NET Web API with MongoDB, Redis and NATS
     digest: a08a9b36e0be4fdea94f7acab2841b985a1a43d2b2cb422d8329115b2fcc1cc3
     name: serviceexample
@@ -31,4 +46,4 @@ entries:
     urls:
     - https://bluerate90.github.io/ServiceExample/charts-repo/serviceexample-0.1.0.tgz
     version: 0.1.0
-generated: "2026-05-04T02:23:00.67700101-07:00"
+generated: "2026-05-04T02:34:59.212071767-07:00"
