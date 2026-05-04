@@ -22,3 +22,5 @@ spec:
   values:
     defaultSettings:
       defaultReplicaCount: 1
+    csi:
+      kubeletRootDir: /var/lib/rancher/k3s/agent/kubelet
