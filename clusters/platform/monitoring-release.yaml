@@ -25,6 +25,12 @@ spec:
       service:
         type: NodePort
         nodePort: 30080
+      additionalDataSources:
+        - name: Loki
+          type: loki
+          url: http://loki:3100
+          access: proxy
+          isDefault: false
     prometheus:
       prometheusSpec:
         retention: 7d
