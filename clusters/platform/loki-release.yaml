@@ -21,3 +21,6 @@ spec:
       enabled: true
     grafana:
       enabled: false
+      sidecar:
+        datasources:
+          defaultDatasourceEnabled: false
